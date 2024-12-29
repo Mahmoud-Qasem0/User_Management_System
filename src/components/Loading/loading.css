@@ -1,0 +1,17 @@
+.loader-container .loader {
+  width: 150px;
+  aspect-ratio: 1.154;
+  --c: #0000, #FEAF00 2deg 59deg, #0000 61deg;
+  --c1: conic-gradient(from 149deg at top, var(--c));
+  --c2: conic-gradient(from -31deg at bottom, var(--c));
+  background: var(--c1) top, var(--c1) bottom right, var(--c2) bottom, var(--c1) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  animation: l3 1s infinite;
+  -webkit-animation: l3 1s infinite;
+}
+@keyframes l3 {
+80%, 100% {
+  background-position: bottom right, bottom left, bottom, top;
+}
+}

@@ -1,0 +1,116 @@
+.user-list {
+  height: calc(100vh - 66px);
+}
+.user-list .users-head {
+  height: 67px;
+}
+.table-box {
+  height: calc(100vh - 150px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.table-box::-webkit-scrollbar{
+  width: 0.8rem;
+  margin: 5px 10px;
+}
+.table-box::-webkit-scrollbar-thumb{
+  background-color: #FEAF00;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.table-box::-webkit-scrollbar-track{
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+@media (min-width: 992px) {
+  table {
+    border-spacing: 0 10px;
+    border-collapse: separate;
+  }
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  margin: 40px 0;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle;
+  width: auto;
+}
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+td img {
+  width: 50px;
+}
+@media (max-width: 991px) {
+  .users-head .users-title {
+    font-size: 20px;
+  }
+  .users-head button {
+    font-size: 14px;
+  }
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:first-child {
+    text-align: center;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:last-child svg {
+    width: 20px;
+  }
+}

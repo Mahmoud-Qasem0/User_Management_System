@@ -1,0 +1,28 @@
+.add-user .container > form {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.add-user .container > form > button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .add-user .container > form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .add-user .container > form > button {
+    width: 100%;
+  }
+}
+.add-user .container > form input {
+  font-size: 14px;
+}
+.add-user .container > form input::placeholder {
+  font-size: 14px;
+  color: #777;
+}
+.add-user .container > form > button {
+  background-color: #FEAF00;
+}

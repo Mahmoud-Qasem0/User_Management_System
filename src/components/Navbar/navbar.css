@@ -1,0 +1,9 @@
+
+@media (max-width: 600px) {
+  .container .search-box {
+    width: 150px;
+  }
+  .container .search-box input {
+    width: 100%;
+  }
+}

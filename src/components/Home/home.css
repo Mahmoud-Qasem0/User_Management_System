@@ -1,0 +1,118 @@
+.home {
+  background-color: #f8f8f8;
+  height: calc(100vh - 66px);
+}
+.home .home-head {
+  height: 67px;
+}
+.home .box {
+  height: calc(100vh - 150px);
+}
+.home .box::-webkit-scrollbar {
+  width: 0.8rem;
+  margin: 5px 10px;
+}
+.home .box::-webkit-scrollbar-thumb {
+  background-color: #feaf00;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.home .box::-webkit-scrollbar-track {
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.home .container {
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .home .container {
+    flex-direction: column;
+  }
+}
+.home .container .cards {
+  gap: 10px;
+}
+.home .charts {
+  height: 300px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .home .charts .chart {
+    font-size: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .home .container .user-card .user-info-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .container .user-card .user-info-box .user-info {
+    text-align: center;
+  }
+  .home .container .user-card .user-info-box .user-info h4 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .home .container .user-card .user-info-box .user-info .job-title {
+    font-size: 14px;
+  }
+}
+.home .container .user-card .user-info-box .user-info .role {
+  font-size: 12px;
+}
+.home .container .user-card .about-user {
+  font-size: 14px;
+  margin-top: 1.5rem;
+}
+@media (max-width: 991px) {
+  .home .container .user-card .about-user {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.home .container .user-card .about-user .user-company p {
+  color: #777;
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  .home .container .user-card .about-user .user-company .company-name {
+    font-size: 12px;
+  }
+  .home .container .user-card .about-user .user-company p {
+    font-size: 10px;
+  }
+}
+.home .container .user-card .about-user h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.home .container .user-card .about-user .contact .contact-box .contact-item,
+.home .container .user-card .about-user .gender-info .per .per-item {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .home .container .user-card .about-user .contact .contact-box .contact-item,
+  .home .container .user-card .about-user .gender-info .per .per-item {
+    font-size: 10px;
+  }
+  .home
+    .container
+    .user-card
+    .about-user
+    .contact
+    .contact-box
+    .contact-item:last-child {
+    font-size: 9px;
+  }
+}

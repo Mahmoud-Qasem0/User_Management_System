@@ -1,0 +1,33 @@
+.profile .container .image-box {
+  margin-bottom: -4rem;
+  height: 8rem;
+}
+.profile .container > form {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 5rem 3rem 0;
+}
+.profile .container > form > button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .profile .container > form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .profile .container > form > button {
+    width: 100%;
+  }
+}
+.profile .container > form input {
+  font-size: 14px;
+}
+.profile .container > form input::placeholder {
+  font-size: 14px;
+  color: #777;
+}
+.profile .container > form > button {
+  background-color: #FEAF00;
+}

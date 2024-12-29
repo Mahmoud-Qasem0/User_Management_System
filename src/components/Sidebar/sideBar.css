@@ -1,0 +1,27 @@
+.sidebarContainer aside .css-dip3t8 {
+  background-color: #F2EAE1;
+}
+.sidebarContainer .ps-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebarContainer .side-head h3 {
+  gap: 5px;
+}
+.sidebarContainer .side-head .personal-info span {
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .sidebarContainer .side-head svg {
+    display: none;
+  } 
+}
+.sidebarContainer .ps-sidebar-container .ps-menu-button {
+  margin: auto;
+  padding: 0 1.5rem;
+  height: auto;
+}
+.sidebarContainer .ps-sidebar-container .ps-menu-button:hover:not(.active) {
+  background-color: rgba(239, 155, 40, 0.3);
+}
